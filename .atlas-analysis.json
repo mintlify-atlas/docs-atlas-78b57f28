@@ -1,0 +1,139 @@
+{
+  "projectType": "saas",
+  "projectName": "Black Michi Studio",
+  "projectDescription": "Full-stack ecommerce platform for product catalog, shopping cart, checkout, and order management with integrated payment processing.",
+  "theme": "almond",
+  "primaryColor": "#1a1a1a",
+  "lightColor": "#f5f5f5",
+  "darkColor": "#0a0a0a",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/product-catalog",
+              "features/shopping-cart",
+              "features/checkout",
+              "features/user-accounts",
+              "features/admin-dashboard"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-variables",
+              "configuration/database-setup",
+              "configuration/payment-integration"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/overview",
+              "deployment/render",
+              "deployment/docker"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth/overview",
+              "api/auth/login",
+              "api/auth/register"
+            ]
+          },
+          {
+            "group": "Products",
+            "pages": [
+              "api/products/list",
+              "api/products/get",
+              "api/products/create",
+              "api/products/update",
+              "api/products/delete",
+              "api/products/search"
+            ]
+          },
+          {
+            "group": "Categories",
+            "pages": [
+              "api/categories/list",
+              "api/categories/create"
+            ]
+          },
+          {
+            "group": "Orders",
+            "pages": [
+              "api/orders/overview",
+              "api/orders/create"
+            ]
+          },
+          {
+            "group": "Payments",
+            "pages": [
+              "api/payments/flow-create",
+              "api/payments/flow-confirm"
+            ]
+          },
+          {
+            "group": "Reviews",
+            "pages": [
+              "api/reviews/list",
+              "api/reviews/create"
+            ]
+          },
+          {
+            "group": "Admin",
+            "pages": [
+              "api/admin/overview",
+              "api/admin/products",
+              "api/admin/orders"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Product catalog with categories and search",
+    "Shopping cart and checkout flow",
+    "User authentication with JWT",
+    "Flow payment gateway integration",
+    "Admin dashboard for product and order management",
+    "Product reviews and ratings",
+    "Image optimization with Sharp and WebP",
+    "PostgreSQL database with Supabase support"
+  ],
+  "publicApiSurface": [
+    "GET /api/productos",
+    "GET /api/productos/:id",
+    "GET /api/productos/categoria/:categoria",
+    "GET /api/productos/buscar",
+    "POST /api/auth/login",
+    "POST /api/auth/register",
+    "GET /api/categorias",
+    "POST /api/payments/flow/create",
+    "POST /api/payments/flow/confirm",
+    "GET /reviews",
+    "POST /reviews",
+    "POST /api/productos (admin)",
+    "PUT /api/productos/:id (admin)",
+    "DELETE /api/productos/:id (admin)",
+    "GET /api/admin/orders (admin)"
+  ]
+}
